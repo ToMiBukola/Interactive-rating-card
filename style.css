@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+}
+.purple {
+    width: 40%;
+    background-image: url(images/bg-main-desktop.png);
+    padding-bottom: 220px;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    font-size: 15px;
+}
+.white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-top: -100px;
+    
+}
+.whitecon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardfront {
+    color: white;
+    background-image: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    width: 85%;
+    z-index: 10;
+    position: relative;
+    left: 150px;
+    top: 50px;
+    background-size: cover;
+    border-radius: 10px;
+}
+.cfront {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+}
+.cardback {
+    position: relative;
+    background-image: url(images/bg-card-back.png);
+    top: 60px;
+    left: 220px;
+    width: 92%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+
+}
+.intext {
+    width: 100%;
+}
+
+.cmy {
+    display: flex;
+    width: 47%;
+    margin-bottom: 15px;
+}
+.box {
+    width: 45%;
+    margin-bottom: 15px;
+}
+.myear {
+    width: 35%;
+}
+#cvc {
+    width: 90%;
+}
+.fel {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    padding-bottom: 40px;
+}
+.num {
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+.fel h6 {
+    letter-spacing: 3px;
+}
+.cardback p {
+    padding-top: 89px;
+    padding-left: 18pc;
+    color: white;
+    letter-spacing: 3px;
+}
+input {
+    outline: none;
+    border: 1px solid hsl(279, 6%, 55%);
+    border-radius: 5px;
+    padding: 5px;
+}
+::placeholder {
+    color: hsl(279, 6%, 55%);
+}
+.butdiv {
+    width: 47%;
+    margin-top: 20px;
+}
+.butdiv button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+}
+label {
+    font-size: 12px;
+}
+
+.white2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.white2c {
+    text-align: center;
+}
+.butdiv2 {
+    width: 100%;
+}
+.butdiv2 button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+}
+
+
+@media (max-width:985px) {
+    .white{
+        width: 50%;
+    }
+}
+
+@media (max-width:885px) {
+    section {
+        flex-direction: column;
+    }
+    .purple {
+        width: 100%;
+        background-image: url(images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 0%;
+        padding-bottom: 0;
+    }
+    .white {
+        width: 100%;
+        margin-top: 0%;
+        
+    }
+    .purplecon {
+        width: 90%;
+        margin: auto;
+    }
+    .cardfront {
+        left: 0;
+        top: 195px;
+        width: 80%;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    .cardback  {
+        left: 88px;
+        top: -250px;
+        width: 80%;
+        background-size: 100%;
+        height: 260px;
+        border-radius: 15px;
+    }
+    .cardback p {
+        padding-top: 165px;
+        padding-left: 85%;
+        color: white;
+        letter-spacing: 1px;
+    }
+    .white {
+        padding-bottom: 20px;
+    }
+    .whitecon {
+        width: 90%;
+        margin: auto;
+    }
+    .box, .cmy, .butdiv {
+        width: 100%;
+    }
+    .white2 {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .white2c {
+        width: 100%;
+    }
+}
+
+@media (max-width:780px) {
+    .cardback p {
+        padding-top: 150px;
+    }
+}
+
+
+@media (max-width:720px) {
+    .cardback p {
+        padding-top: 135px;
+    }
+    .white {
+        margin-top: 0;
+    }
+    
+}
+
+
+@media (max-width:650px) {
+    .cardback p {
+        padding-top: 121px;
+        padding-left: 84%;
+    }
+    .cardfront {
+        top: 180px;
+    }
+}
+
+
+@media (max-width:588px) {
+    .cardback {
+        background-size: 95%;
+    }
+    .cardback p {
+        padding-top: 105px;
+        padding-left: 79%;
+    }
+}
+
+
+@media (max-width:550px) {
+    .cardback p {
+        padding-top: 97px;
+    }
+    .cardfront {
+        top: 150px;
+    }
+}
+
+
+@media (max-width:509px) {
+    .cardback p {
+        padding-top: 89px;
+    }
+    .cardfront {
+        top: 145px;
+    }
+}
+
+
+@media (max-width:487px) {
+    .cardback p {
+        padding-top: 63px;
+        padding-left: 70%;
+    }
+    .cardback {
+        background-size: 95%;
+        height: 170px;
+        top: -170px;
+    }
+    .cardfront {
+        background-size: 90%;
+        top: 85px;
+    }
+    .logo {
+        padding-bottom: 0;
+    }
+    .fel h6, h3 {
+        margin: 0;
+    }
+    .white {
+        padding-bottom: 20px;
+    }
+    .whitecon {
+        width: 90%;
+        margin: auto;
+    }
+    .box, .cmy, .butdiv {
+        width: 100%;
+    }
+}
+
+
+/* @media (max-width:486px) { 
+    .cardback {
+        background-size: 90%;
+        height: 170px;
+        top: -150px;
+    }
+} */
+    

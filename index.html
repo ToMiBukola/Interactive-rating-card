@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive rating card form</title>
+</head>
+<body>
+
+    <section>
+
+
+        <div class="purple">
+            <div class="purplecon">
+                <div class="cardfront">
+                    <div class="cfront">
+                        <img class="logo" src="images/card-logo.svg" alt="">
+                    <div>
+                        <h3 class="num">0000  0000  0000  0000</h3>
+                        <div class="fel">
+                            <h6 class="name">YOUR NAME</h6>
+                            <h6 class="myearr"> <span class="mm">00</span>/<span class="yy">00</span></h6>
+                        </div>
+                    </div>
+                </div>
+                    <!-- <img src="images/bg-card-front.png" alt=""> -->
+                </div>
+    
+                <div class="cardback">
+                    <p class="ccvnum">000</p>
+                </div>
+            </div>
+             
+        </div>
+
+
+        <div class="white">
+            <div class="whitecon">
+
+                <div class="box">
+                    <label for="">CARDHOLDER NAME</label> <br>
+                    <input class="intext" type="text"  id="cardname" placeholder="Jane Applesed"> <br>
+                </div>
+    
+                <div class="box">
+                    <label for=""> CARD NUMBER</label> <br>
+                    <input class="intext"  type="number" id="cardnum" placeholder="eg 123456 789 2345"> <br>
+                </div>
+    
+                <div class="cmy">
+                    <div>
+                        <label for="">EXP.DATE (MM/YY)</label> <br>
+                        <input class="myear" type="number" id="month" placeholder="MM"> <input class="myear" type="number" name="" id="year" placeholder="YY"> <br>
+    
+                    </div>
+                    <div>
+                        <label for="">CVC</label> <br>
+                        <input type="number" id="cvc" maxlength="3" placeholder="eg 123"> 
+                    </div>  
+                </div>
+                
+                <div class="butdiv">
+                    <a href="#" class="confirm"><button>Confirm</button></a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <script src="file.js"></script>
+</body>
+</html>

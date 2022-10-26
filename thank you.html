@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Thank you</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="purple">
+            <div class="cardfront">
+                <div class="cfront">
+                    <img class="logo" src="images/card-logo.svg" alt="">
+                    <div>
+                        <h3 class="num">9591 6489 6389 1011</h3>
+                        <div class="fel">
+                            <h6 class="name">FELICIA LEIRE</h6>
+                            <h6 class="myearr"> <span class="mm">00</span>/<span class="yy">00</span></h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="images/bg-card-front.png" alt=""> -->
+            </div>
+
+            <div class="cardback">
+                <p class="ccvnum">000</p>
+            </div>
+        </div>
+
+        <div class="white2">
+            <div class="white2c">
+                <img src="images/icon-complete.svg" alt="">
+                <h3>THANK YOU</h3>
+                <p>We have added your card details</p>
+
+                <div class="butdiv2">
+                    <a href="#"><button class="comfirm">Confirm</button></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script>
+
+        let num = document.querySelector(".num")
+        let cardnumber = document.getElementById("cardnum")
+
+        let name = document.querySelector(".name")
+        let cardname = document.getElementById("cardname")
+
+        let cardmonth = document.querySelector(".mm")
+        let month = document.getElementById("month")
+
+        let cardyear = document.querySelector(".yy")
+        let year = document.getElementById("year")
+
+        let cardcvc = document.querySelector(".ccvnum")
+        let cvc = document.getElementById("cvc")
+
+        window.onload = function () {
+            // if (window.location.pathname === "/thank you.html") {
+                let lsDetails = JSON.parse(window.localStorage.getItem("cardDetails"));
+                
+                num.innerHTML = lsDetails.cardnumber;
+                name.innerHTML = lsDetails.cardname;
+                cardcvc.innerHTML = lsDetails.cvc
+                cardmonth.innerHTML = lsDetails.month;
+                cardyear.innerHTML = lsDetails.year;
+                // }
+                
+                console.log(lsDetails);
+        }
+
+    </script>
+</body>
+
+</html>
